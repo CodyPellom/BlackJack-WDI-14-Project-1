@@ -27,6 +27,8 @@ Trello User-Stories/Project Board: https://trello.com/b/y64OHjQ8/blackjack-wdi-1
 
 Figma Wireframe (Layout): https://www.figma.com/file/L4RhjrzIOiLND6ITEY2yy3Yv/BlackJack-WDI-14-Project-1
 
+BitBalloon Deployment: http://optimistic-fermi-6dd85a.bitballoon.com/
+
 
 ************************************************************************************************************
 
