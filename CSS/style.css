@@ -1,3 +1,35 @@
-body {
-    background-color: yellow;
+
+header {
+    font-family: 'Pacifico';
+    font-size: 235px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
+
+a { display: flex;
+    justify-content: center;
+    align-content: center;}
+
+
+button { display: flex;
+    justify-content: center;
+    align-content: center;}
+
+
+body {
+    background-color: rgb(240, 183, 223);
+}
+
+p {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+
+
