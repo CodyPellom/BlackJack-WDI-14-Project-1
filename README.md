@@ -1,5 +1,5 @@
 BlackJack : Coded by Cody Pellom (Cody Pellom's LinkedIn: {https://www.linkedin.com/in/cody-pellom/})
-
+************************************************************************************************************
  
 
 General Assembly Cohort Web Development Immersive # 14 
@@ -17,4 +17,16 @@ Information on the Back-End Development:
 [Blackjack as a game is going to be engineered by Cody Pellom as project one of General Assembly's Web Development Immersive #14. I will utilize HTML, CSS, JavaScript and the JavaScript library known as JQuery. Besides these methods an agile work collaboration will be used along with Trello for userstories, Figma for wireframing and finally the service BitBallon will be used as a host for the local code to be used remotely. Cody Pellom is a thrid week student at General Assembly.] 
 
 
+************************************************************************************************************
+
+
+Resources and Implementation Libraries
+JQuery Library: jquery-3.3.1.min.js 
+
 Trello User-Stories/Project Board: https://trello.com/b/y64OHjQ8/blackjack-wdi-14-project-1
+
+Figma Wireframe (Layout): https://www.figma.com/file/L4RhjrzIOiLND6ITEY2yy3Yv/BlackJack-WDI-14-Project-1
+
+
+************************************************************************************************************
+
