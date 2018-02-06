@@ -6,7 +6,7 @@ General Assembly Cohort Web Development Immersive # 14
 
 Rules of BlackJack:
 
-[Blackjack is an interactive card game which challenges the player (User) to reach a score of '21' using cards tha represent different varibles. A player is issued 2 cards and then has to determine whether or not to get 'Hit' by the dealer, risking a 'bust'. A bust happens when a player goes over the score. In order to win, a player has to reach the score 21, or et closer to the score 21 without busting. Whoever gets closest to or to the scoe 21 wins that round.]
+[Blackjack is an interactive card game which challenges the player (User) to reach a score of '21' using cards tha represent different varibles. A player is issued 2 cards and then has to determine whether or not to get 'Hit' by the dealer, risking a 'bust'. A bust happens when a player goes over the score. In order to win, a player has to reach the score 21, or get closer to the score 21 without busting. Whoever gets closest to or to the scoe 21 wins that round.]
 
 More Information About Blackjack:
 
