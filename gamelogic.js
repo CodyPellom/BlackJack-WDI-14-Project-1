@@ -1,4 +1,4 @@
-$('body').css("background-color:", "yellow");
+
 $(document).ready(function () {
 
 
@@ -10,18 +10,9 @@ $(document).ready(function () {
     $('header').css("color", "rgba(172, 195, 224, 0.83)");
     $('header').css("border-style", "solid");
     
-     /* Styling --------------------------------*/
+     /*End Styling ------------------------------*/
 
-     /* Game intel & Logic ---------------------*/
-
-
-    function randomScore(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min)) + min;
-    }
-    console.log("Your card has the value of " + randomScore(1, 52));
-
+     
     /* Cards defined as object arrays -----------*/
 
     const cards = [
@@ -343,10 +334,28 @@ $(document).ready(function () {
         }
     ];
 
+
+    /* Cards end ; defined as object arrays -----------*/
+
+
+    function Dealer(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+    console.log("Your card has the value of " + Dealer(1, 52));
+
+ 
+    function PlayerDealt(card1, card2){
+        for (let Cards = 0; Cards < array.length; Cards++) 
+            const element = array[Cards];
+        card1 = Dealer(1, 13);
+        card2 = Dealer(1, 13);    
+        
+        
     
-    /* Cards defined as object arrays -----------*/
-
-
+    } 
+   
 
 
 
