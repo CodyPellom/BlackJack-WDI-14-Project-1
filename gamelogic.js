@@ -339,7 +339,7 @@ $(document).ready(function () {
         min = Math.ceil(min);
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min)) + min;
-    }
+    };
    
    /////////////////////////////////////////////////////////
 var card = Dealer(1, 52);
@@ -360,9 +360,9 @@ var threeCardSum;
 var fourCardSum;
 var fiveCardSum;
 
-var win = alert("You win! ... Want to play again?");
-var bust = alert("You lose... Play again?");
-var hitAgain = alert("Hit again?");
+// var win = alert("You win! ... Want to play again?");
+// var bust = alert("You lose... Play again?");
+// var hitAgain = alert("Hit again?");
 
 //**Variable * rules**//
 function rules(){
@@ -397,35 +397,53 @@ fourCardSum = (card + card + card + card);
  return win;}
  if (fiveCardSum <= 21);{
  return hitAgain;}
-}
+};
 /////////////////////////////////////////
 let dealerCards = [];
 let randomNumber = 0;
 let playerCards = [];
+let playerHitCards = [];
 
 //for loop that pushes random numbers between 1-52,
 //through the cards array and into the 
 //Empty array, playerCards.
 
-for (i = 0; i < 2; i++) {
-(playerCards.push(cards[Dealer(1, 52)]))};
-
-////////////////////////////////////////////
+///////////////
 
 function hitFunction() {
 
     for (i = 0; i < 1; i++) {
-(playerCards.push(cards[Dealer(1, 52)]))}
-return playerCards;
+        (playerHitCards.push(cards[Dealer(1, 52)]));
+    }
+    console.log(playerHitCards)
+    return playerHitCards;
 
-}
-console.log(hitFunction());
+};
+
+
+
+
+function firstDeal(){
+    for (i = 0; i < 2; i++) {
+    (playerCards.push(cards[Dealer(1, 52)]))};
+    return playerCards;
+    };
+     console.log(firstDeal());
+    /////////////////////////////
+
+
+$('#hitButton').click( () => {
+    hitFunction()
+    
+});
+console.log()
+
 
 
 ///////////////////////////////////////////
 //#hitButton.onclick = 
 
-console.log(playerCards);
+
 
      //Game intel & Logic ---------------------*/
 
