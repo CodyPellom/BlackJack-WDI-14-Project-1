@@ -366,52 +366,9 @@ $(document).ready(function () {
         }
     }
 
-    ////////////////////////////C R E A T E  T H E   R U L E S   ////////////////////////************///////////////// */
     //**Variable * rules**//
     function rules() {
-        twoCardSum = (card + card);
-        if (playerCards.value > 22); {
-            return bust;
-        }
-        if (playerCards === 21); {
-            return win;
-        }
-        if (playerCards <= 21); {
-            return hitAgain;
-        }
-
-        threeCardSum = (card + card + card);
-        if (threeCardSum > 22); {
-            return bust;
-        }
-        if (threeCardSum === 21); {
-            return win;
-        }
-        if (threeCardSum <= 21); {
-            return hitAgain;
-        }
-        //////////////////////////////////////////
-        fourCardSum = (card + card + card + card);
-        if (fourCardSum > 22); {
-            return bust;
-        }
-        if (fourCardSum === 21); {
-            return win;
-        }
-        if (fourCardSum <= 21); {
-            return hitAgain;
-        }
-        //////////////////////////////////////////////////
-        fiveCardSum = (card + card + card + card + card);
-        if (fiveCardSum > 22); {
-            return bust;
-        }
-        if (fiveCardSum === 21); {
-            return win;
-        }
-        if (fiveCardSum <= 21); {
-            return hitAgain;
-        }
+       if  
     };
     /////////////////////////////////////
 
