@@ -2,18 +2,15 @@
 $(document).ready(function () {
 
 
-     /* Styling ---------------------------------*/
-
-    $('header').html("blackjack table").append;
-    $('header').css("font-family", "Satisfy");
-    $('header').css("font-size", "75px");
-    $('header').css("color", "rgba(172, 195, 224, 0.83)");
-    $('header').css("border-style", "solid");
     
-     /*End Styling ------------------------------*/
+
+   
+    
+    
+
 
      
-    /* Cards defined as object arrays -----------*/
+    //Cards defined as object arrays -----------*/
 
     const cards = [
         //hearts
@@ -335,7 +332,7 @@ $(document).ready(function () {
     ];
 
 
-    /* Cards end ; defined as object arrays -----------*/
+   //Cards end ; defined as object arrays -----------*/
 
 
     function Dealer(min, max) {
@@ -343,23 +340,44 @@ $(document).ready(function () {
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min)) + min;
     }
-    console.log("Your card has the value of " + Dealer(1, 52));
+   
 
  
     function PlayerDealt(card1, card2){
-        for (let Cards = 0; Cards < array.length; Cards++) 
-            const element = array[Cards];
-        card1 = Dealer(1, 13);
-        card2 = Dealer(1, 13);    
-        
-        
     
-    } 
-   
+        card1 = Dealer(2, 11);
+        card2 = Dealer(2, 11);    
+        return (card1 +'    '+ card2);
+     } 
+   console.log(PlayerDealt());
 
 
+//create a score bank that logs score along with limits
+var cardScore1;
+var cardScore2;
+var cardScoreOutput;
+var win = alert("You win! ... Want to play again?");
+var bust = alert("You lose... Play again?");
 
-     /*Game intel & Logic ---------------------*/
+
+function gameScore(){
+cardScoreOutput = 
+
+}
+
+
+     //Game intel & Logic ---------------------*/
+
+//xt colors: Berkshire+Swash|Cookie|Damion|Gloria+Hallelujah|Indie+Flower|Pacifico|Satisfy"//Te
+
+function Global() {
+    $('header').html("blackjack table").append;
+    $('header').css("font-family", "Satisfy");
+    $('header').css("font-size", "75px");
+    $('header').css("color", "rgba(172, 195, 224, 0.83)");
+    $('header').css("border-style", "solid");
+}
+
+Global();
 
 })
-//Text colors: Berkshire+Swash|Cookie|Damion|Gloria+Hallelujah|Indie+Flower|Pacifico|Satisfy"
