@@ -403,11 +403,29 @@ let dealerCards = [];
 let randomNumber = 0;
 let playerCards = [];
 
+//for loop that pushes random numbers between 1-52,
+//through the cards array and into the 
+//Empty array, playerCards.
+
+for (i = 0; i < 2; i++) {
+(playerCards.push(cards[Dealer(1, 52)]))};
+
+////////////////////////////////////////////
+
+function hitFunction() {
+
+    for (i = 0; i < 1; i++) {
+(playerCards.push(cards[Dealer(1, 52)]))}
+return playerCards;
+
+}
+console.log(hitFunction());
 
 
+///////////////////////////////////////////
+//#hitButton.onclick = 
 
-
-
+console.log(playerCards);
 
      //Game intel & Logic ---------------------*/
 
