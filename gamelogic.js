@@ -341,15 +341,17 @@ $(document).ready(function () {
         return Math.floor(Math.random() * (max - min)) + min;
     }
    
-
+   /////////////////////////////////////////////////////////
+var card1 = Dealer(1, 52);
+var card2 = Dealer(1, 52);
  
-    function PlayerDealt(card1, card2){
+   // function deal(card1, card2){
     
-        card1 = Dealer(2, 11);
-        card2 = Dealer(2, 11);
+     //   card1 = Dealer(1, 11);
+       // card2 = Dealer(1, 11);
        
-     } 
-   console.log(PlayerDealt());
+     //} 
+   //console.log(deal(card1, card2));
 
 
 //create a score bank that logs score along with limits
@@ -365,44 +367,44 @@ var hitAgain = alert("Hit again?");
 //**Variable * rules**//
 function rules(){
  twoCardSum = (card + card);   
- if (twoCardSum > 22);
- return bust;
- if (twoCardsum === 21);
- return win;
- if (twoCardSum <= 21);
- return hitAgain;
+ if (twoCardSum > 22);{
+ return bust;}
+ if (twoCardsum === 21);{
+ return win;}
+ if (twoCardSum <= 21);{
+ return hitAgain;}
 /////////////////////////////////////
  threeCardSum = (card + card + card);
- if (threeCardSum > 22);
- return bust;
- if (threeCardSum === 21);
- return win;
- if (threeCardSum <= 21);
- return hitAgain;
+ if (threeCardSum > 22);{
+ return bust;}
+ if (threeCardSum === 21);{
+ return win;}
+ if (threeCardSum <= 21);{
+ return hitAgain;}
 //////////////////////////////////////////
 fourCardSum = (card + card + card + card);
- if (fourCardSum > 22);
- return bust;
- if (fourCardSum === 21);
- return win;
- if (fourCardSum <= 21);
- return hitAgain;
+ if (fourCardSum > 22);{
+ return bust;}
+ if (fourCardSum === 21);{
+ return win;}
+ if (fourCardSum <= 21);{
+ return hitAgain;}
 //////////////////////////////////////////////////
  fiveCardSum = (card + card + card + card + card);
- if (fiveCardSum > 22);
- return bust;
- if (fiveCardSum === 21);
- return win;
- if (fiveCardSum <= 21);
- return hitAgain;
+ if (fiveCardSum > 22);{
+ return bust;}
+ if (fiveCardSum === 21);{
+ return win;}
+ if (fiveCardSum <= 21);{
+ return hitAgain;}
 }
 /////////////////////////////////////////
 
-scoreBank = function(){
-return getValue(card) + getValue(card);
+function scoreBank(){
+return getValue(card1) + getValue(card2);
 
 }
-console.log("Your cards are " +(card1)+ "and " +(card2)+ ". Score of " +(scoreBank))
+console.log("Your cards are " +card1+ " and " + card2 + ". Score of " + scoreBank);
      //Game intel & Logic ---------------------*/
 
 //xt colors: Berkshire+Swash|Cookie|Damion|Gloria+Hallelujah|Indie+Flower|Pacifico|Satisfy"//Te
