@@ -1,15 +1,14 @@
-
 $(document).ready(function () {
 
 
-    
-
-   
-    
-    
 
 
-     
+
+
+
+
+
+
     //Cards defined as object arrays -----------*/
 
     const cards = [
@@ -332,7 +331,7 @@ $(document).ready(function () {
     ];
 
 
-   //Cards end ; defined as object arrays -----------*/
+    //Cards end ; defined as object arrays -----------*/
 
 
     function Dealer(min, max) {
@@ -340,123 +339,141 @@ $(document).ready(function () {
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min)) + min;
     };
-   
-   /////////////////////////////////////////////////////////
-var card = Dealer(1, 52);
+
+    /////////////////////////////////////////////////////////
+    var card = Dealer(1, 52);
+
+
+    // function deal(card1, card2){
+
+    //   card1 = Dealer(1, 11);
+    // card2 = Dealer(1, 11);
+
+    //} 
+    //console.log(deal(card1, card2));
+
 
  
-   // function deal(card1, card2){
-    
-     //   card1 = Dealer(1, 11);
-       // card2 = Dealer(1, 11);
-       
-     //} 
-   //console.log(deal(card1, card2));
 
+    // var win = alert("You win! ... Want to play again?");
+    // var bust = alert("You lose... Play again?");
+    // var hitAgain = alert("Hit again?");
 
-//create a score bank that logs score along with limits
-var twoCardSum;
-var threeCardSum;
-var fourCardSum;
-var fiveCardSum;
-
-// var win = alert("You win! ... Want to play again?");
-// var bust = alert("You lose... Play again?");
-// var hitAgain = alert("Hit again?");
-
-//**Variable * rules**//
-function rules(){
- twoCardSum = (card + card);   
- if (twoCardSum > 22);{
- return bust;}
- if (twoCardsum === 21);{
- return win;}
- if (twoCardSum <= 21);{
- return hitAgain;}
-/////////////////////////////////////
- threeCardSum = (card + card + card);
- if (threeCardSum > 22);{
- return bust;}
- if (threeCardSum === 21);{
- return win;}
- if (threeCardSum <= 21);{
- return hitAgain;}
-//////////////////////////////////////////
-fourCardSum = (card + card + card + card);
- if (fourCardSum > 22);{
- return bust;}
- if (fourCardSum === 21);{
- return win;}
- if (fourCardSum <= 21);{
- return hitAgain;}
-//////////////////////////////////////////////////
- fiveCardSum = (card + card + card + card + card);
- if (fiveCardSum > 22);{
- return bust;}
- if (fiveCardSum === 21);{
- return win;}
- if (fiveCardSum <= 21);{
- return hitAgain;}
-};
-/////////////////////////////////////////
-let dealerCards = [];
-let randomNumber = 0;
-let playerCards = [];
-let playerHitCards = [];
-
-//for loop that pushes random numbers between 1-52,
-//through the cards array and into the 
-//Empty array, playerCards.
-
-///////////////
-
-function hitFunction() {
-
-    for (i = 0; i < 1; i++) {
-        (playerHitCards.push(cards[Dealer(1, 52)]));
+    function sumOfCards() {
+        let num = 0;
+        for (i = 0; i > playerCards.length; i++) {
+            num += playerCards[i].value
+        }
     }
-    console.log(playerHitCards)
-    return playerHitCards;
 
-};
+    ////////////////////////////C R E A T E  T H E   R U L E S   ////////////////////////************///////////////// */
+    //**Variable * rules**//
+    function rules() {
+        twoCardSum = (card + card);
+        if (playerCards.value > 22); {
+            return bust;
+        }
+        if (playerCards === 21); {
+            return win;
+        }
+        if (playerCards <= 21); {
+            return hitAgain;
+        }
 
-
-
-
-function firstDeal(){
-    for (i = 0; i < 2; i++) {
-    (playerCards.push(cards[Dealer(1, 52)]))};
-    return playerCards;
+        threeCardSum = (card + card + card);
+        if (threeCardSum > 22); {
+            return bust;
+        }
+        if (threeCardSum === 21); {
+            return win;
+        }
+        if (threeCardSum <= 21); {
+            return hitAgain;
+        }
+        //////////////////////////////////////////
+        fourCardSum = (card + card + card + card);
+        if (fourCardSum > 22); {
+            return bust;
+        }
+        if (fourCardSum === 21); {
+            return win;
+        }
+        if (fourCardSum <= 21); {
+            return hitAgain;
+        }
+        //////////////////////////////////////////////////
+        fiveCardSum = (card + card + card + card + card);
+        if (fiveCardSum > 22); {
+            return bust;
+        }
+        if (fiveCardSum === 21); {
+            return win;
+        }
+        if (fiveCardSum <= 21); {
+            return hitAgain;
+        }
     };
-     console.log(firstDeal());
+    /////////////////////////////////////
+
+    /////////////////////////////////////////
+    let dealerCards = [];
+    let randomNumber = 0;
+    let playerCards = [];
+    let playerHitCards = [];
+
+    //for loop that pushes random numbers between 1-52,
+    //through the cards array and into the 
+    //Empty array, playerCards.
+
+    ///////////////
+
+    function hitFunction() {
+
+        for (i = 0; i < 1; i++) {
+            (playerCards.push(cards[Dealer(1, 52)]));
+        }
+        console.log(playerCards)
+        return playerCards;
+
+    };
+
+
+
+
+    function firstDeal() {
+        for (i = 0; i < 2; i++) {
+            (playerCards.push(cards[Dealer(1, 52)]))
+        };
+        return playerCards;
+    };
+    console.log(firstDeal());
     /////////////////////////////
 
 
-$('#hitButton').click( () => {
-    hitFunction()
-    
-});
-console.log()
+    $('#hitButton').click(() => {
+        hitFunction()
+
+    });
+    console.log()
 
 
 
-///////////////////////////////////////////
-//#hitButton.onclick = 
+    ///////////////////////////////////////////
+    //#hitButton.onclick = 
 
 
 
-     //Game intel & Logic ---------------------*/
+    //Game intel & Logic ---------------------*/
 
-//xt colors: Berkshire+Swash|Cookie|Damion|Gloria+Hallelujah|Indie+Flower|Pacifico|Satisfy"//Te
+    //xt colors: Berkshire+Swash|Cookie|Damion|Gloria+Hallelujah|Indie+Flower|Pacifico|Satisfy"//Te
 
-function Global() {
-    $('header').html("blackjack table").append;
-    $('header').css("font-family", "Satisfy");
-    $('header').css("font-size", "75px");
-    $('header').css("color", "rgba(172, 195, 224, 0.83)");
-    $('header').css("border-style", "solid");
-}
+    function Global() {
+        $('header').html("blackjack table").append;
+        $('header').css("font-family", "Satisfy");
+        $('header').css("font-size", "75px");
+        $('header').css("color", "rgba(172, 195, 224, 0.83)");
+        $('header').css("border-style", "solid");
+    }
 
-Global();
-
+    Global();
 })
