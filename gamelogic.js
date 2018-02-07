@@ -342,8 +342,8 @@ $(document).ready(function () {
     }
    
    /////////////////////////////////////////////////////////
-var card1 = Dealer(1, 52);
-var card2 = Dealer(1, 52);
+var card = Dealer(1, 52);
+
  
    // function deal(card1, card2){
     
@@ -399,12 +399,16 @@ fourCardSum = (card + card + card + card);
  return hitAgain;}
 }
 /////////////////////////////////////////
+let dealerCards = [];
+let randomNumber = 0;
+let playerCards = [];
 
-function scoreBank(){
-return getValue(card1) + getValue(card2);
 
-}
-console.log("Your cards are " +card1+ " and " + card2 + ". Score of " + scoreBank);
+
+
+
+
+
      //Game intel & Logic ---------------------*/
 
 //xt colors: Berkshire+Swash|Cookie|Damion|Gloria+Hallelujah|Indie+Flower|Pacifico|Satisfy"//Te
