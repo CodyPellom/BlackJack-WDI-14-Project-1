@@ -346,26 +346,63 @@ $(document).ready(function () {
     function PlayerDealt(card1, card2){
     
         card1 = Dealer(2, 11);
-        card2 = Dealer(2, 11);    
-        return (card1 +'    '+ card2);
+        card2 = Dealer(2, 11);
+       
      } 
    console.log(PlayerDealt());
 
 
 //create a score bank that logs score along with limits
-var cardScore1;
-var cardScore2;
-var cardScoreOutput;
+var twoCardSum;
+var threeCardSum;
+var fourCardSum;
+var fiveCardSum;
+
 var win = alert("You win! ... Want to play again?");
 var bust = alert("You lose... Play again?");
+var hitAgain = alert("Hit again?");
 
+//**Variable * rules**//
+function rules(){
+ twoCardSum = (card + card);   
+ if (twoCardSum > 22);
+ return bust;
+ if (twoCardsum === 21);
+ return win;
+ if (twoCardSum <= 21);
+ return hitAgain;
+/////////////////////////////////////
+ threeCardSum = (card + card + card);
+ if (threeCardSum > 22);
+ return bust;
+ if (threeCardSum === 21);
+ return win;
+ if (threeCardSum <= 21);
+ return hitAgain;
+//////////////////////////////////////////
+fourCardSum = (card + card + card + card);
+ if (fourCardSum > 22);
+ return bust;
+ if (fourCardSum === 21);
+ return win;
+ if (fourCardSum <= 21);
+ return hitAgain;
+//////////////////////////////////////////////////
+ fiveCardSum = (card + card + card + card + card);
+ if (fiveCardSum > 22);
+ return bust;
+ if (fiveCardSum === 21);
+ return win;
+ if (fiveCardSum <= 21);
+ return hitAgain;
+}
+/////////////////////////////////////////
 
-function gameScore(){
-cardScoreOutput = 
+scoreBank = function(){
+return getValue(card) + getValue(card);
 
 }
-
-
+console.log("Your cards are " +(card1)+ "and " +(card2)+ ". Score of " +(scoreBank))
      //Game intel & Logic ---------------------*/
 
 //xt colors: Berkshire+Swash|Cookie|Damion|Gloria+Hallelujah|Indie+Flower|Pacifico|Satisfy"//Te
