@@ -345,11 +345,11 @@ $(document).ready(function () {
     var playerSum = 0;
     var dealerSum = 0;
 
-    function sumOfCards() {
+    function sumOfCards(pc) {
         playerSum = 0;
         dealerSum = 0;
-        for (let i = 0; i < playerCards.length; i++) {
-            playerSum += playerCards[i].value;
+        for (let i = 0; i < pc.length; i++) {
+            playerSum += pc[i].value;
         }
 
         console.log(`the sum is ${playerSum}`);
@@ -375,6 +375,11 @@ $(document).ready(function () {
             return prompt("BLACKJACK! You win!  ... Play again!");
         }
 
+    }
+
+    function dealerLogic(){
+       let Dsum= sumOfCards(dealerCards) 
+     if (Dsum < 14){hitFunction(dealerCards)}
     }
     //console.log(rules());
     /////////////////////////////////////
@@ -408,7 +413,7 @@ $(document).ready(function () {
 
 
 
-    sumOfCards();
+    sumOfCards(playerCards);
     rules();
     if (playerCards === 21) {
         return alert("You were dealt a natural! You win with a score of 21 on the deal")
@@ -426,7 +431,7 @@ $(document).ready(function () {
         return dealerCards;
 
 
-        sumOfCards();
+        sumOfCards(playerCards);
         rules();
         $('#cardPlacement2').prepend($('<img />'));
         $('img').first().attr('src', dealerCards[dealerCards.length - 1].image);
@@ -440,23 +445,22 @@ $(document).ready(function () {
 
 
     //Hit function for the player//
-    function hitFunction() {
+    function hitFunction(arr) {
 
         for (i = 0; i < 1; i++) {
-            (playerCards.push(cards[Dealer(1, 52)]));
+            (arr.push(cards[Dealer(1, 52)]));
         }
-        console.log(playerCards);
-        sumOfCards();
+        console.log(arr);
+        sumOfCards(arr);
         rules();
-        return playerCards;
-
+        return arr;
     };
 
 
 
     //Hit button for the player, being linked to console and function//
     $('#hitButton').click(() => {
-        hitFunction();
+        hitFunction(playerCards);
         $('#cardPlacement2').prepend($('<img />'));
         $('#cardPlacement2 img').first().attr('src', playerCards[playerCards.length - 1].image)
     });
