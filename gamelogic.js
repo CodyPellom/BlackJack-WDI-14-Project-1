@@ -350,9 +350,11 @@ $(document).ready(function () {
         for (let i = 0; i < playerCards.length; i++) {
             playerSum += playerCards[i].value;
         }
-        
-        console.log(`the sum is ${playerSum}`) 
-        return playerSum;
+            
+            console.log(`the sum is ${playerSum}`) 
+            return playerSum;
+
+    
 
     } 
 
@@ -360,10 +362,10 @@ $(document).ready(function () {
     function rules() {
        
       if  (playerSum > 22){
-          return prompt("You lose... Play again?");
+          return prompt("You lose... Score of  ," +playerSum+ " Play again?");
       }if (playerSum === 21){
-           return prompt("You win! ... Play again?");
-       }
+           return prompt("BLACKJACK! You win!  ... Play again!");
+       }if (playerSum  )
       }
       //console.log(rules());
     /////////////////////////////////////
