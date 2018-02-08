@@ -358,9 +358,8 @@ $(document).ready(function () {
 
     //**Variable * rules**//
     function rules() {
-       if  (playerSum <= 17){
-           return prompt("Hit again?");
-      }if  (playerSum > 22){
+       
+      if  (playerSum > 22){
           return prompt("You lose... Play again?");
       }if (playerSum === 21){
            return prompt("You win! ... Play again?");
