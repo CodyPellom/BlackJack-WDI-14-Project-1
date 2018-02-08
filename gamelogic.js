@@ -343,117 +343,155 @@ $(document).ready(function () {
     /////////////////////////////////////////////////////////
     var card = Dealer(1, 52);
     var playerSum = 0;
- 
-    function sumOfCards() {
-       playerSum = 0
+    var dealerSum = 0;
 
+    function sumOfCards() {
+        playerSum = 0;
+        dealerSum = 0;
         for (let i = 0; i < playerCards.length; i++) {
             playerSum += playerCards[i].value;
         }
-            
-            console.log(`the sum is ${playerSum}`) 
-            return playerSum;
 
-    
+        console.log(`the sum is ${playerSum}`);
+        return playerSum;
 
-    } 
+        for (let i = 0; i < dealerCards.length; i++) {
+            dealerSum += dealerCards[i].value;
+
+        }
+
+        console.log(`the sum is ${dealerSum}`)
+        return dealerSum;
+
+    }
 
     //**Variable * rules**//
     function rules() {
-       
-      if  (playerSum > 22){
-          return prompt("You lose... Score of  ," +playerSum+ " Play again?");
-      }if (playerSum === 21){
-           return prompt("BLACKJACK! You win!  ... Play again!");
-       }if (playerSum === 17 ){
-      }    return alert()
-      //console.log(rules());
+
+        if (playerSum > 22) {
+            return prompt("You lose... Score of  ," + playerSum + " Play again?");
+        }
+        if (playerSum === 21) {
+            return prompt("BLACKJACK! You win!  ... Play again!");
+        }
+
+    }
+    //console.log(rules());
     /////////////////////////////////////
 
     /////////////////////////////////////////
     let dealerCards = [];
     let randomNumber = 0;
     let playerCards = [];
-    
+
 
 
     ///////////////
 
- 
 
 
-//Player is dealt the first hand 
+
+    //Player is dealt the first hand 
     function firstDeal() {
         for (i = 0; i < 2; i++) {
             (playerCards.push(cards[Dealer(1, 52)]));
         }
         //sumOfCards();
         return playerCards;
-        sumOfCards()
-        rules()
-        if (playerCards === 21){
-    }   return alert("You were dealt a natural! You win with a score of 21 on the deal")
-    };
-    console.log(firstDeal())
-    console.log("the players hand")
+
+        for (i = 0; i < 2; i++) {
+            (dealerCards.push(cards[Dealer(1, 52)]));
+        }
+        //sumOfCards();
+        return dealerCards;
+    }
+
+
+
+    sumOfCards();
+    rules();
+    if (playerCards === 21) {
+        return alert("You were dealt a natural! You win with a score of 21 on the deal")
+    }
+    console.log(firstDeal());
+    console.log("the players hand");
     /////////////////////////////
 
 
-//Dealer is dealt firsthand
-function firstDealerDeal() {
-    for (i = 0; i < 2; i++) {
-        (dealerCards.push(cards[Dealer(1, 52)]));
+    //Dealer is dealt firsthand
+    function firstDealerDeal() {
+        for (i = 0; i < 2; i++) {
+            (dealerCards.push(cards[Dealer(1, 52)]));
+        }
+        return dealerCards;
+
+
+        sumOfCards();
+        rules();
+        $('#cardPlacement2').prepend($('<img />'));
+        $('img').first().attr('src', dealerCards[dealerCards.length - 1].image);
+
+
     };
-    sumOfCards()
-    rules();
-    if (playerCards === 21){
-    }   return alert("The dealer got a natural! You lost ... Play again?")
-    return dealerCards;
-};
-console.log(firstDealerDeal());
-console.log('dealer hand')
+    console.log(firstDealerDeal());
+    console.log('dealer hand');
 
 
 
 
-//Hit function for the player//
-function hitFunction() {
+    //Hit function for the player//
+    function hitFunction() {
 
-    for (i = 0; i < 1; i++) {
-        (playerCards.push(cards[Dealer(1, 52)]));
-    }
-    console.log(playerCards)
-    sumOfCards()
-    rules()
-    return playerCards;
+        for (i = 0; i < 1; i++) {
+            (playerCards.push(cards[Dealer(1, 52)]));
+        }
+        console.log(playerCards);
+        sumOfCards();
+        rules();
+        return playerCards;
 
-};
+    };
 
 
 
-//Hit button for the player, being linked to console and function//
+    //Hit button for the player, being linked to console and function//
     $('#hitButton').click(() => {
         hitFunction();
         $('#cardPlacement2').prepend($('<img />'));
-        $('img').first().attr('src', playerCards[playerCards.length -1].image);
+        $('#cardPlacement2 img').first().attr('src', playerCards[playerCards.length - 1].image)
     });
-    console.log();
 
-    // $('#cardPlacement').prepend($('<img />'));
-    // $('img').eq(i).attr('src', playerCards[playerCards.length -1].image);
+
+
+
+
+
+
+    $('#cardPlacement').prepend($('<img />'));
+    $('#cardPlacement img').first().attr('src', dealerCards[dealerCards.length - 1].image);
+
+
+
+
+    $('#cardPlacement').prepend($('<img />'));
+    $('#cardPlacement img').first().attr('src', dealerCards[dealerCards.length - 2].image);
+
+
     $('#cardPlacement2').prepend($('<img />'));
-    $('img').first().attr('src', playerCards[playerCards.length -1].image);
+    $('#cardPlacement2 img').first().attr('src', playerCards[playerCards.length - 1].image);
 
 
     $('#cardPlacement2').prepend($('<img />'));
-    $('img').first().attr('src', playerCards[playerCards.length -2].image);
+    $('#cardPlacement2 img').first().attr('src', playerCards[playerCards.length - 2].image);
+
+
 
 
     //$('#cardPlacement2').prepend($('<img />'));
     //$('img').first().attr('src', playerCards[playerCards.length -3].image);
 
 
-   // $('#cardPlacement2').prepend($('<img />'));
+    // $('#cardPlacement2').prepend($('<img />'));
     //$('img').first().attr('src', playerCards[playerCards.length -4].image);
 
     ///////////////////////////////////////////
@@ -474,4 +512,5 @@ function hitFunction() {
     }
 
     Global();
-})
+
+});

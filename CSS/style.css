@@ -17,11 +17,17 @@ button { display: flex;
     justify-content: center;
     align-content: center;
     font-size: 30px;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Bershire Swash', cursive;
     background-color: rgb(216, 180, 211);
     
 }
+h3 {display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Berkshire Swash';
+    font-size: 50px;
 
+}
 
 body {
 background-color: rgb(186, 243, 216);
@@ -48,6 +54,16 @@ p {
 #instrutions-text {
 font-family: 'Gloria Hallelujah', cursive;
 font-size: 20px;
+
+
+}
+img {
+   
+   padding-left: 10%;
+
+    max-height: 10%;
+    max-width: 10%;
+
 
 
 }
