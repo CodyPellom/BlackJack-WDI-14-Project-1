@@ -365,8 +365,8 @@ $(document).ready(function () {
           return prompt("You lose... Score of  ," +playerSum+ " Play again?");
       }if (playerSum === 21){
            return prompt("BLACKJACK! You win!  ... Play again!");
-       }if (playerSum  )
-      }
+       }if (playerSum === 17 ){
+      }    return alert()
       //console.log(rules());
     /////////////////////////////////////
 
@@ -386,10 +386,13 @@ $(document).ready(function () {
     function firstDeal() {
         for (i = 0; i < 2; i++) {
             (playerCards.push(cards[Dealer(1, 52)]));
-        };
+        }
         //sumOfCards();
         return playerCards;
-
+        sumOfCards()
+        rules()
+        if (playerCards === 21){
+    }   return alert("You were dealt a natural! You win with a score of 21 on the deal")
     };
     console.log(firstDeal())
     console.log("the players hand")
@@ -403,6 +406,8 @@ function firstDealerDeal() {
     };
     sumOfCards()
     rules();
+    if (playerCards === 21){
+    }   return alert("The dealer got a natural! You lost ... Play again?")
     return dealerCards;
 };
 console.log(firstDealerDeal());
