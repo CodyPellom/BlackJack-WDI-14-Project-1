@@ -368,7 +368,11 @@ $(document).ready(function () {
 
     //**Variable * rules**//
     function rules() {
-       if  
+       if  (sumOfCards <= 17){
+           return hitAgain;
+      }if  (sumOfCards > 22);{
+          return bust;
+      }
     };
     /////////////////////////////////////
 
