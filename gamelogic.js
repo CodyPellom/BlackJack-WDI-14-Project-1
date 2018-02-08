@@ -16,316 +16,316 @@ $(document).ready(function () {
         {
             suit: "hearts",
             name: "ace",
-            image: 'Deck-Images/AH.png',
+            image: 'Deck-Images/AH.jpg',
             value: 11
         },
         {
             suit: "hearts",
             name: "two",
-            image: 'Deck-Images/2H.png',
+            image: 'Deck-Images/2H.jpg',
             value: 2
         },
         {
             suit: "hearts",
             name: "three",
-            image: 'Deck-Images/3H.png',
+            image: 'Deck-Images/3H.jpg',
             value: 3
         },
         {
             suit: "hearts",
             name: "four",
-            image: 'Deck-Images/4H.png',
+            image: 'Deck-Images/4H.jpg',
             value: 4
         },
         {
             suit: "hearts",
             name: "five",
-            image: 'Deck-Images/5H.png',
+            image: 'Deck-Images/5H.jpg',
             value: 5
         },
         {
             suit: "hearts",
             name: "six",
-            image: 'Deck-Images/6H.png',
+            image: 'Deck-Images/6H.jpg',
             value: 6
         },
         {
             suit: "hearts",
             name: "seven",
-            image: 'Deck-Images/7H.png',
+            image: 'Deck-Images/7H.jpg',
             value: 7
         },
         {
             suit: "hearts",
             name: "eight",
-            image: 'Deck-Images/8H.png',
+            image: 'Deck-Images/8H.jpg',
             value: 8
         },
         {
             suit: "hearts",
             name: "nine",
-            image: 'Deck-Images/9H.png',
+            image: 'Deck-Images/9H.jpg',
             value: 9
         },
         {
             suit: "hearts",
             name: "ten",
-            image: 'Deck-Images/10H.png',
+            image: 'Deck-Images/10H.jpg',
             value: 10
         },
         {
             suit: "hearts",
             name: "jack",
-            image: 'Deck-Images/JH.png',
+            image: 'Deck-Images/JH.jpg',
             value: 10
         },
         {
             suit: "hearts",
             name: "queen",
-            image: 'Deck-Images/QH.png',
+            image: 'Deck-Images/QH.jpg',
             value: 10
         },
         {
             suit: "hearts",
             name: "king",
-            image: 'Deck-Images/KH.png',
+            image: 'Deck-Images/KH.jpg',
             value: 10
         },
         //Diamonds
         {
             suit: "diamonds",
             name: "ace",
-            image: 'Deck-Images/AD.png',
+            image: 'Deck-Images/AD.jpg',
             value: 11
         },
         {
             suit: "diamonds",
             name: "two",
-            image: 'Deck-Images/2D.png',
+            image: 'Deck-Images/2D.jpg',
             value: 2
         },
         {
             suit: "diamonds",
             name: "three",
-            image: 'Deck-Images/3D.png',
+            image: 'Deck-Images/3D.jpg',
             value: 3
         },
         {
             suit: "diamonds",
             name: "four",
-            image: 'Deck-Images/4D.png',
+            image: 'Deck-Images/4D.jpg',
             value: 4
         },
         {
             suit: "diamonds",
             name: "five",
-            image: 'Deck-Images/5D.png',
+            image: 'Deck-Images/5D.jpg',
             value: 5
         },
         {
             suit: "diamonds",
             name: "six",
-            image: 'Deck-Images/6D.png',
+            image: 'Deck-Images/6D.jpg',
             value: 6
         },
         {
             suit: "diamonds",
             name: "seven",
-            image: 'Deck-Images/7D.png',
+            image: 'Deck-Images/7D.jpg',
             value: 7
         },
         {
             suit: "diamonds",
             name: "eight",
-            image: 'Deck-Images/8D.png',
+            image: 'Deck-Images/8D.jpg',
             value: 8
         },
         {
             suit: "diamonds",
             name: "nine",
-            image: 'Deck-Images/9D.png',
+            image: 'Deck-Images/9D.jpg',
             value: 9
         },
         {
             suit: "diamonds",
             name: "ten",
-            image: 'Deck-Images/10D.png',
+            image: 'Deck-Images/10D.jpg',
             value: 10
         },
         {
             suit: "diamonds",
             name: "jack",
-            image: 'Deck-Images/JD.png',
+            image: 'Deck-Images/JD.jpg',
             value: 10
         },
         {
             suit: "diamonds",
             name: "queen",
-            image: 'Deck-Images/QD.png',
+            image: 'Deck-Images/QD.jpg',
             value: 10
         },
         {
             suit: "diamonds",
             name: "king",
-            image: 'Deck-Images/KD.png',
+            image: 'Deck-Images/KD.jpg',
             value: 10
         },
         //Clubs
         {
             suit: "clubs",
             name: "ace",
-            image: 'Deck-Images/AC.png',
+            image: 'Deck-Images/AC.jpg',
             value: 11
         },
         {
             suit: "clubs",
             name: "two",
-            image: 'Deck-Images/2C.png',
+            image: 'Deck-Images/2C.jpg',
             value: 2
         },
         {
             suit: "clubs",
             name: "three",
-            image: 'Deck-Images/3C.png',
+            image: 'Deck-Images/3C.jpg',
             value: 3
         },
         {
             suit: "clubs",
             name: "four",
-            image: 'Deck-Images/4C.png',
+            image: 'Deck-Images/4C.jpg',
             value: 4
         },
         {
             suit: "clubs",
             name: "five",
-            image: 'Deck-Images/5C.png',
+            image: 'Deck-Images/5C.jpg',
             value: 5
         },
         {
             suit: "clubs",
             name: "six",
-            image: 'Deck-Images/6C.png',
+            image: 'Deck-Images/6C.jpg',
             value: 6
         },
         {
             suit: "clubs",
             name: "seven",
-            image: 'Deck-Images/7C.png',
+            image: 'Deck-Images/7C.jpg',
             value: 7
         },
         {
             suit: "clubs",
             name: "eight",
-            image: 'Deck-Images/8C.png',
+            image: 'Deck-Images/8C.jpg',
             value: 8
         },
         {
             suit: "clubs",
             name: "nine",
-            image: 'Deck-Images/9C.png',
+            image: 'Deck-Images/9C.jpg',
             value: 9
         },
         {
             suit: "clubs",
             name: "ten",
-            image: 'Deck-Images/10C.png',
+            image: 'Deck-Images/10C.jpg',
             value: 10
         },
         {
             suit: "clubs",
             name: "jack",
-            image: 'Deck-Images/JC.png',
+            image: 'Deck-Images/JC.jpg',
             value: 10
         },
         {
             suit: "clubs",
             name: "queen",
-            image: 'Deck-Images/QC.png',
+            image: 'Deck-Images/QC.jpg',
             value: 10
         },
         {
             suit: "clubs",
             name: "king",
-            image: 'Deck-Images/KC.png',
+            image: 'Deck-Images/KC.jpg',
             value: 10
         },
         //Spades
         {
             suit: "spades",
             name: "ace",
-            image: 'Deck-Images/AS.png',
+            image: 'Deck-Images/AS.jpg',
             value: 11
         },
         {
             suit: "spades",
             name: "two",
-            image: 'Deck-Images/2S.png',
+            image: 'Deck-Images/2S.jpg',
             value: 2
         },
         {
             suit: "spades",
             name: "three",
-            image: 'Deck-Images/3S.png',
+            image: 'Deck-Images/3S.jpg',
             value: 3
         },
         {
             suit: "spades",
             name: "four",
-            image: 'Deck-Images/4S.png',
+            image: 'Deck-Images/4S.jpg',
             value: 4
         },
         {
             suit: "spades",
             name: "five",
-            image: 'Deck-Images/5S.png',
+            image: 'Deck-Images/5S.jpg',
             value: 5
         },
         {
             suit: "spades",
             name: "six",
-            image: 'Deck-Images/6S.png',
+            image: 'Deck-Images/6S.jpg',
             value: 6
         },
         {
             suit: "spades",
             name: "seven",
-            image: 'Deck-Images/7S.png',
+            image: 'Deck-Images/7S.jpg',
             value: 7
         },
         {
             suit: "spades",
             name: "eight",
-            image: 'Deck-Images/8S.png',
+            image: 'Deck-Images/8S.jpg',
             value: 8
         },
         {
             suit: "spades",
             name: "nine",
-            image: 'Deck-Images/9S.png',
+            image: 'Deck-Images/9S.jpg',
             value: 9
         },
         {
             suit: "spades",
             name: "ten",
-            image: 'Deck-Images/10S.png',
+            image: 'Deck-Images/10S.jpg',
             value: 10
         },
         {
             suit: "spades",
             name: "jack",
-            image: 'Deck-Images/JS.png',
+            image: 'Deck-Images/JS.jpg',
             value: 10
         },
         {
             suit: "spades",
             name: "queen",
-            image: 'Deck-Images/QS.png',
+            image: 'Deck-Images/QS.jpg',
             value: 10
         },
         {
             suit: "spades",
             name: "king",
-            image: 'Deck-Images/KS.png',
+            image: 'Deck-Images/KS.jpg',
             value: 10
         }
     ];
@@ -343,80 +343,98 @@ $(document).ready(function () {
     /////////////////////////////////////////////////////////
     var card = Dealer(1, 52);
 
-
-    // function deal(card1, card2){
-
-    //   card1 = Dealer(1, 11);
-    // card2 = Dealer(1, 11);
-
-    //} 
-    //console.log(deal(card1, card2));
-
-
  
-
-    // var win = alert("You win! ... Want to play again?");
-    // var bust = alert("You lose... Play again?");
-    // var hitAgain = alert("Hit again?");
-
     function sumOfCards() {
         let num = 0;
         for (i = 0; i > playerCards.length; i++) {
-            num += playerCards[i].value
+            num += playerCards[i].value;
+        }  if (num > 21 ) {
+            alert("Busted");
         }
-    }
+        return num;
+
+    } 
 
     //**Variable * rules**//
     function rules() {
        if  (sumOfCards <= 17){
-           return hitAgain;
-      }if  (sumOfCards > 22);{
-          return bust;
+           return prompt("Hit again?");
+      }if  (sumOfCards > 22){
+          return prompt("You lose... Play again?");
+      }if (sumOfCards === 21){
+           return prompt("You win! ... Play again?");
+       }
       }
-    };
+      console.log(rules());
     /////////////////////////////////////
 
     /////////////////////////////////////////
     let dealerCards = [];
     let randomNumber = 0;
     let playerCards = [];
-    let playerHitCards = [];
+    
 
-    //for loop that pushes random numbers between 1-52,
-    //through the cards array and into the 
-    //Empty array, playerCards.
 
     ///////////////
 
-    function hitFunction() {
-
-        for (i = 0; i < 1; i++) {
-            (playerCards.push(cards[Dealer(1, 52)]));
-        }
-        console.log(playerCards)
-        return playerCards;
-
-    };
+ 
 
 
-
-
+//Player is dealt the first hand 
     function firstDeal() {
         for (i = 0; i < 2; i++) {
-            (playerCards.push(cards[Dealer(1, 52)]))
+            (playerCards.push(cards[Dealer(1, 52)]));
         };
+        sumOfCards();
         return playerCards;
+
     };
     console.log(firstDeal());
     /////////////////////////////
 
 
+//Dealer is dealt firsthand
+function firstDealerDeal() {
+    for (i = 0; i < 2; i++) {
+        (dealerCards.push(cards[Dealer(1, 52)]));
+    };
+    sumOfCards();
+    return dealerCards;
+};
+console.log(firstDeal());
+
+
+
+
+//Hit function for the player//
+function hitFunction() {
+
+    for (i = 0; i < 1; i++) {
+        (playerCards.push(cards[Dealer(1, 52)]));
+    }
+    console.log(playerCards)
+    return playerCards;
+
+    if (playerCards.value > 21);
+    return prompt("Busted!");
+};
+
+
+
+//Hit button for the player, being linked to console and function//
     $('#hitButton').click(() => {
-        hitFunction()
-
+        hitFunction();
+        sumOfCards();
     });
-    console.log()
+    console.log();
 
+    // $('#cardPlacement').prepend($('<img />'));
+    // $('img').eq(i).attr('src', playerCards[playerCards.length -1].image);
+    $('#cardPlacement2').prepend($('<img />'));
+    $('img').first().attr('src', playerCards[playerCards.length -1].image);
+
+    $('#cardPlacement2').prepend($('<img />'));
+    $('img').first().attr('src', playerCards[playerCards.length -2].image);
 
 
     ///////////////////////////////////////////
