@@ -342,30 +342,31 @@ $(document).ready(function () {
 
     /////////////////////////////////////////////////////////
     var card = Dealer(1, 52);
-
+    var playerSum = 0;
  
     function sumOfCards() {
-        let num = 0;
-        for (i = 0; i > playerCards.length; i++) {
-            num += playerCards[i].value;
-        }  if (num > 21 ) {
-            alert("Busted");
+       playerSum = 0
+
+        for (let i = 0; i < playerCards.length; i++) {
+            playerSum += playerCards[i].value;
         }
-        return num;
+        
+        console.log(`the sum is ${playerSum}`) 
+        return playerSum;
 
     } 
 
     //**Variable * rules**//
     function rules() {
-       if  (sumOfCards <= 17){
+       if  (playerSum <= 17){
            return prompt("Hit again?");
-      }if  (sumOfCards > 22){
+      }if  (playerSum > 22){
           return prompt("You lose... Play again?");
-      }if (sumOfCards === 21){
+      }if (playerSum === 21){
            return prompt("You win! ... Play again?");
        }
       }
-      console.log(rules());
+      //console.log(rules());
     /////////////////////////////////////
 
     /////////////////////////////////////////
@@ -385,11 +386,12 @@ $(document).ready(function () {
         for (i = 0; i < 2; i++) {
             (playerCards.push(cards[Dealer(1, 52)]));
         };
-        sumOfCards();
+        //sumOfCards();
         return playerCards;
 
     };
-    console.log(firstDeal());
+    console.log(firstDeal())
+    console.log("the players hand")
     /////////////////////////////
 
 
@@ -398,10 +400,12 @@ function firstDealerDeal() {
     for (i = 0; i < 2; i++) {
         (dealerCards.push(cards[Dealer(1, 52)]));
     };
-    sumOfCards();
+    sumOfCards()
+    rules();
     return dealerCards;
 };
-console.log(firstDeal());
+console.log(firstDealerDeal());
+console.log('dealer hand')
 
 
 
@@ -413,10 +417,10 @@ function hitFunction() {
         (playerCards.push(cards[Dealer(1, 52)]));
     }
     console.log(playerCards)
+    sumOfCards()
+    rules()
     return playerCards;
 
-    if (playerCards.value > 21);
-    return prompt("Busted!");
 };
 
 
@@ -424,7 +428,8 @@ function hitFunction() {
 //Hit button for the player, being linked to console and function//
     $('#hitButton').click(() => {
         hitFunction();
-        sumOfCards();
+        $('#cardPlacement2').prepend($('<img />'));
+        $('img').first().attr('src', playerCards[playerCards.length -1].image);
     });
     console.log();
 
@@ -433,9 +438,17 @@ function hitFunction() {
     $('#cardPlacement2').prepend($('<img />'));
     $('img').first().attr('src', playerCards[playerCards.length -1].image);
 
+
     $('#cardPlacement2').prepend($('<img />'));
     $('img').first().attr('src', playerCards[playerCards.length -2].image);
 
+
+    //$('#cardPlacement2').prepend($('<img />'));
+    //$('img').first().attr('src', playerCards[playerCards.length -3].image);
+
+
+   // $('#cardPlacement2').prepend($('<img />'));
+    //$('img').first().attr('src', playerCards[playerCards.length -4].image);
 
     ///////////////////////////////////////////
     //#hitButton.onclick = 
