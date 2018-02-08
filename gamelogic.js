@@ -379,8 +379,11 @@ $(document).ready(function () {
 
     function dealerLogic(){
        let Dsum= sumOfCards(dealerCards) 
-     if (Dsum < 14){hitFunction(dealerCards)}
+     if (Dsum < 14){hitFunction(dealerCards)  
+        $('#cardPlacement').prepend($('<img />'));
+        $('#cardPlacement img').first().attr('src', dealerCards[dealerCards.length - 1].image);   
     }
+        }
     //console.log(rules());
     /////////////////////////////////////
 
@@ -463,6 +466,8 @@ $(document).ready(function () {
         hitFunction(playerCards);
         $('#cardPlacement2').prepend($('<img />'));
         $('#cardPlacement2 img').first().attr('src', playerCards[playerCards.length - 1].image)
+
+        dealerLogic();
     });
 
 
@@ -513,6 +518,11 @@ $(document).ready(function () {
         $('header').css("font-size", "75px");
         $('header').css("color", "rgba(172, 195, 224, 0.83)");
         $('header').css("border-style", "solid");
+        $('#hitButton').css("font-family", "Cookie");
+        $('#stayButton').css("font-family", "Cookie");
+
+
+
     }
 
     Global();
